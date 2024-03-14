@@ -6,3 +6,6 @@ var diffiDirectionOne = 2;
 var diffiDirectionTwo = 200;
 var rebirthboost = 1;
 var rebirthcount = 0;
+function mainBttnClick() {
+  money += boost*rebirthboost;document.getElementById('moneydisplay').innerHTML = '$' + money.toString();
+}
