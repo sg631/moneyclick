@@ -35,3 +35,12 @@ function rebirthBttnClick(){
     document.getElementById('rebirthcountdisplay').innerHTML = rebirthcount
   } 
 }
+function rebirthShopUnlockBttnClick() {
+  if (rebirthcount > 2) {
+    rebirthcount -= 3;
+    rebirthboost = 1;
+    for (let i = rebirthcount; i > 0; i -= 1) {
+        rebirthboost *= 2;
+    }
+}
+}
