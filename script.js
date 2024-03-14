@@ -22,3 +22,16 @@ function boostIncreaseBttnClick() {
     document.getElementById('boostIncreaseBttn').innerHTML = '$' + (boost * diffiMultForBoost).toString()
   }
 }
+function rebirthBttnClick(){
+  if (money > (rebirthcount + 1) * diffiMultForRebirth) {
+    money = 0;
+    diffiMultForBoost = 100;
+    diffiDirectionOne = 2;
+    boost = 1;
+    rebirthcount++;
+    rebirthboost *= 2;
+    getElementById('moneydisplay').innerHTML = '$0';
+    document.getElementById('boostIncreaseBttn').innerHTML = 100;
+    document.getElementById('rebirthcountdisplay').innerHTML = rebirthcount
+  } 
+}
